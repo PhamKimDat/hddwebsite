@@ -16,7 +16,7 @@
       }
     },
     "Project": {
-      "commandName": "Project",
+      "commandName": "HDDWebsite",
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

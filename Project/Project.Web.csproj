@@ -13,4 +13,9 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\images\spbc_1.png" />
+    <None Include="wwwroot\images\spbc_2.jpg" />
+  </ItemGroup>
+
 </Project>
