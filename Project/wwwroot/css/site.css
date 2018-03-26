@@ -44,7 +44,7 @@
 }
 
 #spbc_1 {
-    margin-top: 70px;
+    /*margin-top: 70px;*/
     /*margin-left: 300px;*/
     width: 180px;
     height: 140px;
@@ -53,13 +53,24 @@
 /*border of item*/
 
 .img-border {
-    margin-left: 300px;
+    margin-left: 20px;
     margin-top: 10px;
     width: 200px;
     height: 400px;
     border: 0.2px solid;
     border-color: #1d4088;
     border-bottom: .2px solid;
+    box-shadow: rgba(204, 250, 244,1)
+}
+
+.img-row {
+    margin-left: 300px;
+    margin-top: 20px;
+    width: 800px;
+    height: 420px;
+    border: 1px solid;
+    border-color: #1d4088;
+    border-bottom: 1px solid;
     box-shadow: rgba(204, 250, 244,1)
 }
 
