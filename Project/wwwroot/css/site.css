@@ -66,8 +66,8 @@
     margin-top: 20px;
     width: 800px;
     height: 420px;
-    border: 1px solid;
-    border-color: #1d4088;
+    /*border: 1px solid;
+    border-color: #1d4088;*/
     border-bottom: 1px solid;
     box-shadow: rgba(204, 250, 244,1)
 }

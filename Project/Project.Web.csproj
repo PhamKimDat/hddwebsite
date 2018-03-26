@@ -18,4 +18,7 @@
     <None Include="wwwroot\images\spbc_2.jpg" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Remove="Views\.__Layout.cshtml" />
+  </ItemGroup>
 </Project>
