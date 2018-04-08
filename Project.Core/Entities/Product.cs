@@ -8,7 +8,7 @@ namespace Project.Core.Entities
 {
     public class Product : BaseEntity
     {
-        [Required(ErrorMessage =CommonConstant.NAME_REQUIRED)]
+        [Required(ErrorMessage = CommonConstant.NAME_REQUIRED)]
         public string Name { get; set; }
         public float Price { get; set; }
     }

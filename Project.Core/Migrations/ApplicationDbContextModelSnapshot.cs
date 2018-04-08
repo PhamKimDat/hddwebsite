@@ -7,17 +7,16 @@ using Microsoft.EntityFrameworkCore.Storage.Internal;
 using Project.Core.Data;
 using System;
 
-namespace Project.Web.Migrations
+namespace Project.Core.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20180310113015_InitDb")]
-    partial class InitDb
+    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.0.1-rtm-125")
+                .HasAnnotation("ProductVersion", "2.0.2-rtm-10011")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("Project.Core.Entities.Product", b =>

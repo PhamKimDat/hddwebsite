@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Project.Core.Data;
 
-namespace Project.Web.Data
+namespace Project.Web
 {
     //class init data
     public static class DbInitializer

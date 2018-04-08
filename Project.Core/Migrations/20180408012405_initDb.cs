@@ -2,9 +2,9 @@
 using System;
 using System.Collections.Generic;
 
-namespace Project.Web.Migrations
+namespace Project.Core.Migrations
 {
-    public partial class InitDb : Migration
+    public partial class initDb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
