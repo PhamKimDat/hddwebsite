@@ -12546,11 +12546,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\DOAn\\hddwebsite\\Project.Core\\Project.Core.csproj",
+      "projectUniqueName": "C:\\HDDWebsite\\hddwebsite\\Project.Core\\Project.Core.csproj",
       "projectName": "Project.Core",
-      "projectPath": "C:\\DOAn\\hddwebsite\\Project.Core\\Project.Core.csproj",
+      "projectPath": "C:\\HDDWebsite\\hddwebsite\\Project.Core\\Project.Core.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\DOAn\\hddwebsite\\Project.Core\\obj\\",
+      "outputPath": "C:\\HDDWebsite\\hddwebsite\\Project.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

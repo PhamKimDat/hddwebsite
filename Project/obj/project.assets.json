@@ -4746,6 +4746,20 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "Project.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.All": "2.0.6",
+          "Microsoft.EntityFrameworkCore": "2.0.2"
+        },
+        "compile": {
+          "bin/placeholder/Project.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Project.Core.dll": {}
+        }
       }
     }
   },
@@ -12527,14 +12541,19 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "Project.Core/1.0.0": {
+      "type": "project",
+      "path": "../Project.Core/Project.Core.csproj",
+      "msbuildProject": "../Project.Core/Project.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "C:\\DOAn\\hddwebsite\\Project.Core\\Project.Core.csproj",
       "Microsoft.AspNetCore.All >= 2.0.6",
       "Microsoft.EntityFrameworkCore >= 2.0.2",
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "Project.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12547,11 +12566,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\DOAn\\hddwebsite\\Project\\Project.Web.csproj",
+      "projectUniqueName": "C:\\HDDWebsite\\hddwebsite\\Project\\Project.Web.csproj",
       "projectName": "Project.Web",
-      "projectPath": "C:\\DOAn\\hddwebsite\\Project\\Project.Web.csproj",
+      "projectPath": "C:\\HDDWebsite\\hddwebsite\\Project\\Project.Web.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\DOAn\\hddwebsite\\Project\\obj\\",
+      "outputPath": "C:\\HDDWebsite\\hddwebsite\\Project\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12570,8 +12589,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\DOAn\\hddwebsite\\Project.Core\\Project.Core.csproj": {
-              "projectPath": "C:\\DOAn\\hddwebsite\\Project.Core\\Project.Core.csproj"
+            "C:\\HDDWebsite\\hddwebsite\\Project.Core\\Project.Core.csproj": {
+              "projectPath": "C:\\HDDWebsite\\hddwebsite\\Project.Core\\Project.Core.csproj"
             }
           }
         }
@@ -12606,16 +12625,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "Unable to find project information for 'C:\\DOAn\\hddwebsite\\Project.Core\\Project.Core.csproj'. The project file may be invalid or missing targets required for restore.",
-      "libraryId": "C:\\DOAn\\hddwebsite\\Project.Core\\Project.Core.csproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.0"
-      ]
-    }
-  ]
+  }
 }
