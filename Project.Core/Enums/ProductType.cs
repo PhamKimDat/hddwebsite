@@ -5,12 +5,12 @@ using System.Text;
 
 namespace Project.Core.Enum
 {
-    public enum ProductType
+    public enum DiskType
     {
-        [Description("Special")]
+        [Description("HDD")]
         Special=0,
 
-        [Description("Normal")]
+        [Description("SSD")]
         Normal = 1,
     }
 }
