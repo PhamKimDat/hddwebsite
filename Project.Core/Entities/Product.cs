@@ -15,12 +15,10 @@ namespace Project.Core.Entities
         public string ImageUrl { get; set; }
 
         public bool isSold { get; set; }
+        public int Amount { get; set; }
 
         public string BillId { get; set; }
-        public virtual Bill Bill { get; set; }
-
-        public virtual MainBoard MainBoard { get; set; }
-        
+        public virtual List<Bill> Bill { get; set; }
 
     }
 }

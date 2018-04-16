@@ -22,33 +22,24 @@ namespace Project.Core.Data
 
             // Change ApplicationUser to Users table
             builder.Entity<Product>().ToTable("Products");
-            builder.Entity<Disk>().ToTable("Disks");
+            builder.Entity<Customer>().ToTable("Customers");
             builder.Entity<Bill>().ToTable("Bills");
-            builder.Entity<MainBoard>().ToTable("MainBoards");
-            builder.Entity<VGA>().ToTable("VGAs");
-            builder.Entity<CPU>().ToTable("CPUs");
+            builder.Entity<User>().ToTable("Users");
+            builder.Entity<UserRole>().ToTable("UserRoles");
 
 
-            //add relationship (1(product)->n(bill))
-            builder.Entity<Bill>().HasMany(x => x.Products).WithOne(x => x.Bill).HasForeignKey(x => x.BillId);
-
-            // user farm many to many relationship
-            //builder.Entity<UserFarm>().HasOne(uf => uf.User).WithMany(u => u.UserFarms).HasForeignKey(uf => uf.UserId);
-
-            // one area has many devices relatioship
-            //builder.Entity<Sensor>().HasOne(d => d.Area).WithMany(a => a.Sensors).HasForeignKey(d => d.AreaId);
+            ////add relationship (1(product)->n(bill))
+            //builder.Entity<Bill>().HasMany(x => x.Products).WithOne(x => x.Bill).HasForeignKey(x => x.BillId);
 
         }
 
         #region DbSet
 
         public DbSet<Product> Products { get; set; }
-        public DbSet<Disk> Disks { get; set; }
-
         public DbSet<Bill> Bills { get; set; }
-        public DbSet<CPU> CPUs { get; set; }
-        public DbSet<MainBoard> MainBoards { get; set; }
-        public DbSet<VGA> VGAs { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
 
 
 

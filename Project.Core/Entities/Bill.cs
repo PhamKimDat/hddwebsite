@@ -15,7 +15,6 @@ namespace Project.Core.Entities
         public string Description { get; set; }
         public virtual List<Product> Products { get; set; }
 
-        //tam thoi
-        public string Email { get; set; }
+
     }
 }
