@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Project.Core.Entities
 {
-    public class Customer : BaseEntity
+    public class User : BaseEntity
     {
         public string Name { get; set; }
         public string AvatarUrl { get; set; }
@@ -16,6 +16,8 @@ namespace Project.Core.Entities
         public string Email { get; set; }
         public string HashedPassword { get; set; }
         public string Salt { get; set; }
-        public bool isSupperAdmin { get; set; }
+        public bool isAdmin { get; set; }
+
+        public virtual List<Bill> Bills { get; set; }
     }
 }

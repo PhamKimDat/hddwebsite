@@ -22,26 +22,19 @@ namespace Project.Core.Data
 
             // Change ApplicationUser to Users table
             builder.Entity<Product>().ToTable("Products");
-            builder.Entity<Customer>().ToTable("Customers");
             builder.Entity<Bill>().ToTable("Bills");
             builder.Entity<User>().ToTable("Users");
-            builder.Entity<UserRole>().ToTable("UserRoles");
 
-
-            ////add relationship (1(product)->n(bill))
-            //builder.Entity<Bill>().HasMany(x => x.Products).WithOne(x => x.Bill).HasForeignKey(x => x.BillId);
-
+            //add relationship
+            builder.Entity<Bill>().HasMany(b => b.Products).WithOne(p => p.Bill).HasForeignKey(b => b.BillId);  //relation ship with bill and product
+            builder.Entity<User>().HasMany(u => u.Bills).WithOne(b => b.User).HasForeignKey(u => u.UserId);
         }
 
         #region DbSet
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Bill> Bills { get; set; }
-        public DbSet<Customer> Customers { get; set; }
         public DbSet<User> Users { get; set; }
-        public DbSet<UserRole> UserRoles { get; set; }
-
-
 
         /// <summary>
         /// Get DbSet

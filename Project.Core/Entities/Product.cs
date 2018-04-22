@@ -14,11 +14,12 @@ namespace Project.Core.Entities
         public string Description { get; set; }
         public string ImageUrl { get; set; }
 
-        public bool isSold { get; set; }
+        public float Discount { get; set; }
+
         public int Amount { get; set; }
 
         public string BillId { get; set; }
-        public virtual List<Bill> Bill { get; set; }
+        public virtual Bill Bill { get; set; }
 
     }
 }
