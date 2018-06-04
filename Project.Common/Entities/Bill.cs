@@ -1,11 +1,11 @@
-﻿using Project.Core.Constant;
-using Project.Core.Enum;
+﻿using Project.Common.Constant;
+using Project.Common.Enum;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace Project.Core.Entities
+namespace Project.Common.Entities
 {
     public class Bill : BaseEntity
     {

@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Project.Core.Migrations
+namespace Project.SQLServer.Migrations
 {
     public partial class AddNewColumn : Migration
     {

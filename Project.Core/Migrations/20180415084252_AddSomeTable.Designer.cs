@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.EntityFrameworkCore.Storage.Internal;
-using Project.Core.Data;
-using Project.Core.Enum;
+using Project.SQLServer.Data;
+using Project.Common.Enum;
 using System;
 
-namespace Project.Core.Migrations
+namespace Project.SQLServer.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20180415084252_AddSomeTable")]

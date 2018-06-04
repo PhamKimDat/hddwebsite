@@ -2,7 +2,7 @@
 using System;
 using System.Security.Cryptography;
 
-namespace Project.Core.Helpers
+namespace Project.Common.Helpers
 {
 
     public static class PasswordHelper

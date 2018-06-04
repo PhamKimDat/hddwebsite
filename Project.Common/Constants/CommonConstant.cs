@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Project.Core.Constant
+namespace Project.Common.Constant
 {
     //class contain message
     public class CommonConstant

@@ -4,10 +4,10 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.Internal;
-using Project.Core.Data;
+using Project.SQLServer.Data;
 using System;
 
-namespace Project.Core.Migrations
+namespace Project.SQLServer.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20180409013956_initDb")]

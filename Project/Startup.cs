@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Project.Core.Data;
+using Project.SQLServer.Data;
 
 namespace Project
 {
@@ -25,7 +25,7 @@ namespace Project
         {
             services.AddMvc();
             services.AddDbContext<ApplicationDbContext>(options =>
-       options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+			                                            options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

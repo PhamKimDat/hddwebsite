@@ -1,9 +1,18 @@
-C:\HDDWebsite\hddwebsite\Project.Core\obj\Debug\netcoreapp2.0\Project.Core.csprojResolveAssemblyReference.cache
-C:\HDDWebsite\hddwebsite\Project.Core\obj\Debug\netcoreapp2.0\Project.Core.csproj.CoreCompileInputs.cache
-C:\HDDWebsite\hddwebsite\Project.Core\obj\Debug\netcoreapp2.0\Project.Core.AssemblyInfoInputs.cache
-C:\HDDWebsite\hddwebsite\Project.Core\obj\Debug\netcoreapp2.0\Project.Core.AssemblyInfo.cs
-C:\HDDWebsite\hddwebsite\Project.Core\bin\Debug\netcoreapp2.0\Project.Core.deps.json
-C:\HDDWebsite\hddwebsite\Project.Core\bin\Debug\netcoreapp2.0\Project.Core.dll
-C:\HDDWebsite\hddwebsite\Project.Core\bin\Debug\netcoreapp2.0\Project.Core.pdb
-C:\HDDWebsite\hddwebsite\Project.Core\obj\Debug\netcoreapp2.0\Project.Core.dll
-C:\HDDWebsite\hddwebsite\Project.Core\obj\Debug\netcoreapp2.0\Project.Core.pdb
+C:/HDDWebsite/hddwebsite/Project.Core/obj/Debug/netcoreapp2.0/Project.Core.csprojResolveAssemblyReference.cache
+C:/HDDWebsite/hddwebsite/Project.Core/obj/Debug/netcoreapp2.0/Project.Core.csproj.CoreCompileInputs.cache
+C:/HDDWebsite/hddwebsite/Project.Core/obj/Debug/netcoreapp2.0/Project.Core.AssemblyInfoInputs.cache
+C:/HDDWebsite/hddwebsite/Project.Core/obj/Debug/netcoreapp2.0/Project.Core.AssemblyInfo.cs
+C:/HDDWebsite/hddwebsite/Project.Core/bin/Debug/netcoreapp2.0/Project.Core.deps.json
+C:/HDDWebsite/hddwebsite/Project.Core/bin/Debug/netcoreapp2.0/Project.Core.dll
+C:/HDDWebsite/hddwebsite/Project.Core/bin/Debug/netcoreapp2.0/Project.Core.pdb
+C:/HDDWebsite/hddwebsite/Project.Core/obj/Debug/netcoreapp2.0/Project.Core.dll
+C:/HDDWebsite/hddwebsite/Project.Core/obj/Debug/netcoreapp2.0/Project.Core.pdb
+/Volumes/My Projects/Visual Studio Projects/hddwebsite/Project.Core/bin/Debug/netcoreapp2.0/Project.Core.deps.json
+/Volumes/My Projects/Visual Studio Projects/hddwebsite/Project.Core/bin/Debug/netcoreapp2.0/Project.Core.dll
+/Volumes/My Projects/Visual Studio Projects/hddwebsite/Project.Core/bin/Debug/netcoreapp2.0/Project.Core.pdb
+/Volumes/My Projects/Visual Studio Projects/hddwebsite/Project.Core/obj/Debug/netcoreapp2.0/Project.Core.csproj.CoreCompileInputs.cache
+/Volumes/My Projects/Visual Studio Projects/hddwebsite/Project.Core/obj/Debug/netcoreapp2.0/Project.Core.AssemblyInfoInputs.cache
+/Volumes/My Projects/Visual Studio Projects/hddwebsite/Project.Core/obj/Debug/netcoreapp2.0/Project.Core.AssemblyInfo.cs
+/Volumes/My Projects/Visual Studio Projects/hddwebsite/Project.Core/obj/Debug/netcoreapp2.0/Project.Core.dll
+/Volumes/My Projects/Visual Studio Projects/hddwebsite/Project.Core/obj/Debug/netcoreapp2.0/Project.Core.pdb
+/Volumes/My Projects/Visual Studio Projects/hddwebsite/Project.Core/obj/Debug/netcoreapp2.0/Project.Core.csprojResolveAssemblyReference.cache

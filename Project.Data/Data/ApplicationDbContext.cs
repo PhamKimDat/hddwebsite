@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.SQLServer.Data
+namespace Project.MySQL.Data
 {
 
     public class ApplicationDbContext : DbContext
@@ -16,18 +16,18 @@ namespace Project.SQLServer.Data
         }
 
 
-        protected override void OnModelCreating(ModelBuilder builder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(builder);
+            base.OnModelCreating(modelBuilder);
 
             // Change ApplicationUser to Users table
-            builder.Entity<Product>().ToTable("Products");
-            builder.Entity<Bill>().ToTable("Bills");
-            builder.Entity<User>().ToTable("Users");
+            modelBuilder.Entity<Product>().ToTable("Products");
+            modelBuilder.Entity<Bill>().ToTable("Bills");
+            modelBuilder.Entity<User>().ToTable("Users");
 
             //add relationship
-            builder.Entity<Bill>().HasMany(b => b.Products).WithOne(p => p.Bill).HasForeignKey(b => b.BillId);  //relation ship with bill and product
-            builder.Entity<User>().HasMany(u => u.Bills).WithOne(b => b.User).HasForeignKey(u => u.UserId);
+            modelBuilder.Entity<Bill>().HasMany(b => b.Products).WithOne(p => p.Bill).HasForeignKey(b => b.BillId);  //relation ship with bill and product
+            modelBuilder.Entity<User>().HasMany(u => u.Bills).WithOne(b => b.User).HasForeignKey(u => u.UserId);
         }
 
         #region DbSet

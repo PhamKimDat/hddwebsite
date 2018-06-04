@@ -20,15 +20,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Project.Core\Project.Core.csproj" />
+    <ProjectReference Include="..\Project.Common\Project.Common.csproj" />
+    <ProjectReference Include="..\Project.Data\Project.MySQL.csproj" />
+    <ProjectReference Include="..\Project.Core\Project.SQLServer.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="DbInitializer.cs" />
   </ItemGroup>
 </Project>
