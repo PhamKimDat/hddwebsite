@@ -30,7 +30,4 @@
     <ProjectReference Include="..\Project.Data\Project.MySQL.csproj" />
     <ProjectReference Include="..\Project.Core\Project.SQLServer.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="DbInitializer.cs" />
-  </ItemGroup>
 </Project>

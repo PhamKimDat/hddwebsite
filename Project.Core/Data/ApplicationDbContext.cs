@@ -24,9 +24,11 @@ namespace Project.SQLServer.Data
             builder.Entity<Product>().ToTable("Products");
             builder.Entity<Bill>().ToTable("Bills");
             builder.Entity<User>().ToTable("Users");
+            builder.Entity<BillDetail>().ToTable("BillDetails");
 
             //add relationship
-            builder.Entity<Bill>().HasMany(b => b.Products).WithOne(p => p.Bill).HasForeignKey(b => b.BillId);  //relation ship with bill and product
+            builder.Entity<Product>().HasMany(b => b.BillDetails).WithOne(p => p.Product).HasForeignKey(b => b.ProductId);  //relation ship with billdetail and product
+            builder.Entity<BillDetail>().HasOne(b => b.Bill).WithMany(p => p.BillDetails).HasForeignKey(b =>b.BillId);  //relation ship with billdetail and product
             builder.Entity<User>().HasMany(u => u.Bills).WithOne(b => b.User).HasForeignKey(u => u.UserId);
         }
 
@@ -35,6 +37,8 @@ namespace Project.SQLServer.Data
         public DbSet<Product> Products { get; set; }
         public DbSet<Bill> Bills { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<BillDetail> BillDetails { get; set; }
+
 
         /// <summary>
         /// Get DbSet

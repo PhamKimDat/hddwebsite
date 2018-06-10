@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.EntityFrameworkCore.Storage.Internal;
+using Project.Common.Enum;
 using Project.SQLServer.Data;
 using System;
 
@@ -17,19 +18,15 @@ namespace Project.SQLServer.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.0.2-rtm-10011")
+                .HasAnnotation("ProductVersion", "2.0.0-rtm-26452")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Project.Core.Entities.Bill", b =>
+            modelBuilder.Entity("Project.Common.Entities.Bill", b =>
                 {
                     b.Property<string>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("Amount");
-
                     b.Property<DateTimeOffset>("CreatedAt");
-
-                    b.Property<string>("Description");
 
                     b.Property<double>("Total");
 
@@ -44,7 +41,65 @@ namespace Project.SQLServer.Migrations
                     b.ToTable("Bills");
                 });
 
-            modelBuilder.Entity("Project.Core.Entities.Customer", b =>
+            modelBuilder.Entity("Project.Common.Entities.BillDetail", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("Amount");
+
+                    b.Property<string>("BillId");
+
+                    b.Property<DateTimeOffset>("CreatedAt");
+
+                    b.Property<string>("Description");
+
+                    b.Property<string>("ProductId");
+
+                    b.Property<double>("Total");
+
+                    b.Property<double>("TotalMoney");
+
+                    b.Property<DateTimeOffset>("UpdatedAt");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BillId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("BillDetails");
+                });
+
+            modelBuilder.Entity("Project.Common.Entities.Product", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("Amount");
+
+                    b.Property<DateTimeOffset>("CreatedAt");
+
+                    b.Property<string>("Description");
+
+                    b.Property<float>("Discount");
+
+                    b.Property<string>("ImageUrl");
+
+                    b.Property<string>("Name");
+
+                    b.Property<double>("Price");
+
+                    b.Property<int>("ProductType");
+
+                    b.Property<DateTimeOffset>("UpdatedAt");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("Project.Common.Entities.User", b =>
                 {
                     b.Property<string>("Id")
                         .ValueGeneratedOnAdd();
@@ -67,101 +122,29 @@ namespace Project.SQLServer.Migrations
 
                     b.Property<DateTimeOffset>("UpdatedAt");
 
-                    b.Property<bool>("isSupperAdmin");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Customers");
-                });
-
-            modelBuilder.Entity("Project.Core.Entities.Product", b =>
-                {
-                    b.Property<string>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("Amount");
-
-                    b.Property<string>("BillId");
-
-                    b.Property<DateTimeOffset>("CreatedAt");
-
-                    b.Property<string>("Description");
-
-                    b.Property<string>("ImageUrl");
-
-                    b.Property<string>("Name");
-
-                    b.Property<double>("Price");
-
-                    b.Property<DateTimeOffset>("UpdatedAt");
-
-                    b.Property<bool>("isSold");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Products");
-                });
-
-            modelBuilder.Entity("Project.Core.Entities.User", b =>
-                {
-                    b.Property<string>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("Amount");
-
-                    b.Property<string>("BillId");
-
-                    b.Property<DateTimeOffset>("CreatedAt");
-
-                    b.Property<string>("Description");
-
-                    b.Property<string>("ImageUrl");
-
-                    b.Property<string>("Name");
-
-                    b.Property<double>("Price");
-
-                    b.Property<DateTimeOffset>("UpdatedAt");
-
-                    b.Property<bool>("isSold");
+                    b.Property<bool>("isAdmin");
 
                     b.HasKey("Id");
 
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("Project.Core.Entities.UserRole", b =>
+            modelBuilder.Entity("Project.Common.Entities.Bill", b =>
                 {
-                    b.Property<string>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<DateTimeOffset>("CreatedAt");
-
-                    b.Property<string>("RoleId");
-
-                    b.Property<DateTimeOffset>("UpdatedAt");
-
-                    b.Property<string>("UserId");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("RoleId");
-
-                    b.ToTable("UserRoles");
-                });
-
-            modelBuilder.Entity("Project.Core.Entities.Bill", b =>
-                {
-                    b.HasOne("Project.Core.Entities.User")
-                        .WithMany("Bill")
+                    b.HasOne("Project.Common.Entities.User", "User")
+                        .WithMany("Bills")
                         .HasForeignKey("UserId");
                 });
 
-            modelBuilder.Entity("Project.Core.Entities.UserRole", b =>
+            modelBuilder.Entity("Project.Common.Entities.BillDetail", b =>
                 {
-                    b.HasOne("Project.Core.Entities.UserRole", "Role")
-                        .WithMany()
-                        .HasForeignKey("RoleId");
+                    b.HasOne("Project.Common.Entities.Bill", "Bill")
+                        .WithMany("BillDetails")
+                        .HasForeignKey("BillId");
+
+                    b.HasOne("Project.Common.Entities.Product", "Product")
+                        .WithMany("BillDetails")
+                        .HasForeignKey("ProductId");
                 });
 #pragma warning restore 612, 618
         }

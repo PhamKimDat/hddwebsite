@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.MySQL.Data
+namespace Project.SQLServer.Data
 {
 
     public class ApplicationDbContext : DbContext
@@ -16,18 +16,20 @@ namespace Project.MySQL.Data
         }
 
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder builder)
         {
-            base.OnModelCreating(modelBuilder);
+            base.OnModelCreating(builder);
 
             // Change ApplicationUser to Users table
-            modelBuilder.Entity<Product>().ToTable("Products");
-            modelBuilder.Entity<Bill>().ToTable("Bills");
-            modelBuilder.Entity<User>().ToTable("Users");
+            builder.Entity<Product>().ToTable("Products");
+            builder.Entity<Bill>().ToTable("Bills");
+            builder.Entity<User>().ToTable("Users");
+            builder.Entity<BillDetail>().ToTable("BillDetails");
 
             //add relationship
-            modelBuilder.Entity<Bill>().HasMany(b => b.Products).WithOne(p => p.Bill).HasForeignKey(b => b.BillId);  //relation ship with bill and product
-            modelBuilder.Entity<User>().HasMany(u => u.Bills).WithOne(b => b.User).HasForeignKey(u => u.UserId);
+            builder.Entity<Product>().HasMany(b => b.BillDetails).WithOne(p => p.Product).HasForeignKey(b => b.ProductId);  //relation ship with billdetail and product
+            builder.Entity<BillDetail>().HasOne(b => b.Bill).WithMany(p => p.BillDetails).HasForeignKey(b => b.BillId);  //relation ship with billdetail and product
+            builder.Entity<User>().HasMany(u => u.Bills).WithOne(b => b.User).HasForeignKey(u => u.UserId);
         }
 
         #region DbSet
@@ -35,6 +37,8 @@ namespace Project.MySQL.Data
         public DbSet<Product> Products { get; set; }
         public DbSet<Bill> Bills { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<BillDetail> BillDetails { get; set; }
+
 
         /// <summary>
         /// Get DbSet
