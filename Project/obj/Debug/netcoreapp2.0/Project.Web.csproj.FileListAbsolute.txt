@@ -42,3 +42,9 @@ C:/HDDWebsite/hddwebsite/Project/bin/Debug/netcoreapp2.0/Project.Core.pdb
 /Volumes/My Projects/Visual Studio Projects/hddwebsite/Project/obj/Debug/netcoreapp2.0/Project.Web.csproj.CopyComplete
 /Volumes/My Projects/Visual Studio Projects/hddwebsite/Project/obj/Debug/netcoreapp2.0/Project.Web.dll
 /Volumes/My Projects/Visual Studio Projects/hddwebsite/Project/obj/Debug/netcoreapp2.0/Project.Web.pdb
+C:\Proje\hddwebsite\Project\obj\Debug\netcoreapp2.0\Project.Web.csprojAssemblyReference.cache
+C:\Proje\hddwebsite\Project\obj\Debug\netcoreapp2.0\Project.Web.csproj.CoreCompileInputs.cache
+C:\Proje\hddwebsite\Project\obj\Debug\netcoreapp2.0\Project.Web.AssemblyInfoInputs.cache
+C:\Proje\hddwebsite\Project\obj\Debug\netcoreapp2.0\Project.Web.AssemblyInfo.cs
+C:\Proje\hddwebsite\Project\obj\Debug\netcoreapp2.0\Project.Web.dll
+C:\Proje\hddwebsite\Project\obj\Debug\netcoreapp2.0\Project.Web.pdb
