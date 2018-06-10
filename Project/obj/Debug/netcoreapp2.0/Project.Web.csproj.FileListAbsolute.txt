@@ -35,7 +35,7 @@ C:/HDDWebsite/hddwebsite/Project/bin/Debug/netcoreapp2.0/Project.Core.pdb
 /Volumes/My Projects/Visual Studio Projects/hddwebsite/Project/bin/Debug/netcoreapp2.0/Project.Common.pdb
 /Volumes/My Projects/Visual Studio Projects/hddwebsite/Project/bin/Debug/netcoreapp2.0/Project.MySQL.pdb
 /Volumes/My Projects/Visual Studio Projects/hddwebsite/Project/bin/Debug/netcoreapp2.0/Project.SQLServer.pdb
-/Volumes/My Projects/Visual Studio Projects/hddwebsite/Project/obj/Debug/netcoreapp2.0/Project.Web.csprojResolveAssemblyReference.cache
+/Volumes/My Projects/Visual Studio Projects/hddwebsite/Project/obj/Debug/netcoreapp2.0/Project.Web.csprojAssemblyReference.cache
 /Volumes/My Projects/Visual Studio Projects/hddwebsite/Project/obj/Debug/netcoreapp2.0/Project.Web.csproj.CoreCompileInputs.cache
 /Volumes/My Projects/Visual Studio Projects/hddwebsite/Project/obj/Debug/netcoreapp2.0/Project.Web.AssemblyInfoInputs.cache
 /Volumes/My Projects/Visual Studio Projects/hddwebsite/Project/obj/Debug/netcoreapp2.0/Project.Web.AssemblyInfo.cs

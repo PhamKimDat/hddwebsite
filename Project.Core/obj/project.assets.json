@@ -5059,8 +5059,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
-          "Microsoft.AspNetCore.All": "2.0.0",
-          "Microsoft.NETCore.App": "2.0.0"
+          "Microsoft.AspNetCore.All": "2.0.0"
         },
         "compile": {
           "bin/placeholder/Project.Common.dll": {}
@@ -13195,37 +13194,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/hoangduy/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Proje\\hddwebsite\\Project.Core\\Project.SQLServer.csproj",
+      "projectUniqueName": "/Volumes/My Projects/Visual Studio Projects/hddwebsite/Project.Core/Project.SQLServer.csproj",
       "projectName": "Project.SQLServer",
-      "projectPath": "C:\\Proje\\hddwebsite\\Project.Core\\Project.SQLServer.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Proje\\hddwebsite\\Project.Core\\obj\\",
+      "projectPath": "/Volumes/My Projects/Visual Studio Projects/hddwebsite/Project.Core/Project.SQLServer.csproj",
+      "packagesPath": "/Users/hoangduy/.nuget/packages/",
+      "outputPath": "/Volumes/My Projects/Visual Studio Projects/hddwebsite/Project.Core/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/hoangduy/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Proje\\hddwebsite\\Project.Common\\Project.Common.csproj": {
-              "projectPath": "C:\\Proje\\hddwebsite\\Project.Common\\Project.Common.csproj"
+            "/Volumes/My Projects/Visual Studio Projects/hddwebsite/Project.Common/Project.Common.csproj": {
+              "projectPath": "/Volumes/My Projects/Visual Studio Projects/hddwebsite/Project.Common/Project.Common.csproj"
             }
           }
         }
@@ -13239,37 +13236,37 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Microsoft.NETCore.App": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "2.0",
+            "autoReferenced": true
+          },
           "AutoFixture": {
             "target": "Package",
-            "version": "[4.4.0, )"
+            "version": "4.4.0"
           },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "[2.0.0, )"
+            "version": "2.0.0"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
-            "version": "[2.0.0, )"
+            "version": "2.0.0"
           },
           "Microsoft.EntityFrameworkCore.Relational": {
             "target": "Package",
-            "version": "[2.0.0, )"
+            "version": "2.0.0"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2.0.0, )"
-          },
-          "Microsoft.NETCore.App": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[2.0.0, )",
-            "autoReferenced": true
+            "version": "2.0.0"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2.0.0, )"
+            "version": "2.0.0"
           }
         },
         "imports": [
