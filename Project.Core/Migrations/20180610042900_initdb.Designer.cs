@@ -11,7 +11,7 @@ using System;
 
 namespace Project.SQLServer.Migrations
 {
-    [DbContext(typeof(ApplicationDbContext))]
+    [DbContext(typeof(ApplicationDbContextSQL))]
     [Migration("20180610042900_initdb")]
     partial class initdb
     {

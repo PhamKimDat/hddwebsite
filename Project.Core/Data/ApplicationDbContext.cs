@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 namespace Project.SQLServer.Data
 {
 
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContextSQL : DbContext
     {
-        public ApplicationDbContext(DbContextOptions options)
+        public ApplicationDbContextSQL(DbContextOptions options)
            : base(options)
         {
         }

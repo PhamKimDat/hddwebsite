@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.SQLServer.Data
+namespace Project.MySQL.Data
 {
 
     public class ApplicationDbContext : DbContext
