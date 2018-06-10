@@ -27,6 +27,7 @@ namespace Project
             //SQL
             //services.AddDbContext<ApplicationDbContext>(options =>
             //options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
             //MySQL
             services.AddDbContext<ApplicationDbContext>(options =>
                                                options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
