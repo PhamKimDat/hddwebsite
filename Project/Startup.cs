@@ -25,7 +25,7 @@ namespace Project
         {
             services.AddMvc();
             //SQL
-            services.AddDbContext<ApplicationDbContext>(options =>
+            services.AddDbContext<ApplicationDbContextSQL>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             //MySQL

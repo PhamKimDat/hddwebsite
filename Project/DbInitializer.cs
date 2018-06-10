@@ -10,7 +10,7 @@ namespace Project.Web
     //class init data
     public static class DbInitializer
     {
-        internal static void Initialize(ApplicationDbContext context)
+        internal static void Initialize(ApplicationDbContextSQL context) //(rename ApplicationDbContext for MySQL)
         {
             //context.Database.EnsureCreated();
 
