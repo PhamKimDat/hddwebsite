@@ -30,7 +30,8 @@ namespace Project.Web
                     Description="LCD screen 15 inches, 2.3GHz dual-core Intel Core i5, Turbo Boost up to 3.6GHz, with 4MB shared L3 cache",
                     Price= 1500,
                     ImageUrl="./img/product01.png",
-                    ProductType= Common.Enum.ProductType.NewProduct,
+                    ProductType= Common.Enum.ProductType.Laptop,
+                    Trend= Common.Enum.Trend.NewProduct,
                     CreatedAt= DateTime.UtcNow,
                 },
                  new Product
@@ -40,7 +41,8 @@ namespace Project.Web
                     Description="The top-rated QC35 adds a direct connection to Google Assistant",
                     Price= 300,
                     ImageUrl="./img/product02.png",
-                    ProductType= Common.Enum.ProductType.NewProduct,
+                    ProductType= Common.Enum.ProductType.Heaphone,
+                    Trend= Common.Enum.Trend.NewProduct,
                     CreatedAt= DateTime.UtcNow,
                 },
                    new Product
@@ -50,7 +52,8 @@ namespace Project.Web
                     Description="LCD screen 15 inches, 2.5GHz dual-core Intel Core i7, Turbo Boost up to 3.6GHz, with 6MB shared L3 cache",
                     Price= 2500,
                     ImageUrl="./img/product03.png",
-                    ProductType= Common.Enum.ProductType.NewProduct,
+                    ProductType= Common.Enum.ProductType.Laptop,
+                    Trend= Common.Enum.Trend.NewProduct,
                     CreatedAt= DateTime.UtcNow,
                 },
                    new Product
@@ -60,7 +63,8 @@ namespace Project.Web
                     Description="10.1 inches,Qualcomm Snapdragon 810, Quad-core 1.5 GHz Cortex-A53 & Quad-core 2.0 GHz Cortex-A57",
                     Price= 2500,
                     ImageUrl="./img/product04.png",
-                    ProductType= Common.Enum.ProductType.NewProduct,
+                    ProductType= Common.Enum.ProductType.Tablet,
+                    Trend= Common.Enum.Trend.NewProduct,
                     CreatedAt= DateTime.UtcNow,
                 },
                    new Product
@@ -70,7 +74,8 @@ namespace Project.Web
                     Description="Near Field Communication (NFC) technology, Keep music going with up to 20 h of long-lasting battery.3",
                     Price= 2500,
                     ImageUrl="./img/product05.png",
-                    ProductType= Common.Enum.ProductType.NewProduct,
+                    ProductType= Common.Enum.ProductType.Heaphone,
+                    Trend= Common.Enum.Trend.NewProduct,
                     CreatedAt= DateTime.UtcNow,
                 },
 
@@ -90,7 +95,8 @@ namespace Project.Web
                     Description="LCD screen 17.3 inches, 2.3GHz quad-core Intel Core i7, Ram 8GB, 125GB SSD",
                     Price= 1500,
                     ImageUrl="./img/product06.png",
-                    ProductType= Common.Enum.ProductType.HotProduct,
+                    ProductType= Common.Enum.ProductType.Laptop,
+                    Trend= Common.Enum.Trend.HotProduct,
                     CreatedAt= DateTime.UtcNow,
                 },
                   new Product
@@ -100,7 +106,8 @@ namespace Project.Web
                     Description="Super amoled, quad HD 2k",
                     Price= 500,
                     ImageUrl="./img/product07.png",
-                    ProductType= Common.Enum.ProductType.HotProduct,
+                    ProductType= Common.Enum.ProductType.Phone,
+                    Trend= Common.Enum.Trend.HotProduct,
                     CreatedAt= DateTime.UtcNow,
                 },
                   new Product
@@ -110,7 +117,8 @@ namespace Project.Web
                     Description="Intel® Core™ i5-6550U 1.8GHz",
                     Price= 700,
                     ImageUrl="./img/product08.png",
-                    ProductType= Common.Enum.ProductType.HotProduct,
+                    ProductType= Common.Enum.ProductType.Laptop,
+                    Trend= Common.Enum.Trend.HotProduct,
                     CreatedAt= DateTime.UtcNow,
                 },
                     new Product
@@ -120,7 +128,8 @@ namespace Project.Web
                     Description="Capture with 23MP",
                     Price= 700,
                     ImageUrl="./img/product09.png",
-                    ProductType= Common.Enum.ProductType.HotProduct,
+                    ProductType= Common.Enum.ProductType.Camera,
+                    Trend= Common.Enum.Trend.HotProduct,
                     CreatedAt= DateTime.UtcNow,
                 },
 
@@ -129,6 +138,10 @@ namespace Project.Web
             //save to db
             context.AddRange(hotproducts);
             context.SaveChanges();
+
+            //add normal product
+
+            //add accessory (phụ kiện)
 
         }
     }
