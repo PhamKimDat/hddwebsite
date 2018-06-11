@@ -12,9 +12,10 @@ using System;
 namespace Project.SQLServer.Migrations
 {
     [DbContext(typeof(ApplicationDbContextSQL))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180611124058_addTrendColumn")]
+    partial class addTrendColumn
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
