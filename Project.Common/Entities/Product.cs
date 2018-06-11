@@ -15,7 +15,9 @@ namespace Project.Common.Entities
         public string Description { get; set; }
 
         public ProductType ProductType{ get; set; }
-            
+
+        public Trend Trend { get; set; }
+
         public string ImageUrl { get; set; }
 
         public float Discount { get; set; }
