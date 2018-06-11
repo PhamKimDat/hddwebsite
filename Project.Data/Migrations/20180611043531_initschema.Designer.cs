@@ -12,8 +12,8 @@ using System;
 namespace Project.MySQL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20180610123656_addproducttype")]
-    partial class addproducttype
+    [Migration("20180611043531_initschema")]
+    partial class initschema
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -92,6 +92,8 @@ namespace Project.MySQL.Migrations
                     b.Property<double>("Price");
 
                     b.Property<int>("ProductType");
+
+                    b.Property<int>("Trend");
 
                     b.Property<DateTimeOffset>("UpdatedAt");
 

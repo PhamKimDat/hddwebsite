@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Project.MySQL.Migrations
 {
-    public partial class addproducttype : Migration
+    public partial class initschema : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -21,6 +21,7 @@ namespace Project.MySQL.Migrations
                     Name = table.Column<string>(type: "longtext", nullable: true),
                     Price = table.Column<double>(type: "double", nullable: false),
                     ProductType = table.Column<int>(type: "int", nullable: false),
+                    Trend = table.Column<int>(type: "int", nullable: false),
                     UpdatedAt = table.Column<DateTimeOffset>(type: "datetime(6)", nullable: false)
                 },
                 constraints: table =>
