@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{34A6ED41-596C-4008-8A99-77265BBA3247}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Project.Data/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Project.Common/Entities/Product.cs">
     <Files>
-      <File FileName="Project/Program.cs" Line="11" Column="29" />
-      <File FileName="Project/Startup.cs" Line="10" Column="24" />
-      <File FileName="Project.Data/Program.cs" Line="11" Column="23" />
+      <File FileName="Project/Startup.cs" Line="1" Column="1" />
+      <File FileName="Project/DbInitializer.cs" Line="1" Column="1" />
+      <File FileName="Project.Common/Enums/ProductType.cs" Line="1" Column="1" />
+      <File FileName="Enums Status" />
+      <File FileName="Project.Common/Entities/Product.cs" Line="19" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
