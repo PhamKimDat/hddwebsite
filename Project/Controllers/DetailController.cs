@@ -11,8 +11,9 @@ namespace Project.Web.Controllers
     public class DetailController : Controller
     {
         // GET: /<controller>/
-        public IActionResult Index()
+        public IActionResult Index(string ID)
         {
+            ViewData["ID"] = ID;
             return View();
         }
     }
