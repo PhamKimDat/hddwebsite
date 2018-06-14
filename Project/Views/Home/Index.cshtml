@@ -107,8 +107,8 @@
                     <h3 class="title">New Products</h3>
                     <div class="section-nav">
                         <ul class="section-tab-nav tab-nav">
-                            <li class="active"><a data-toggle="tab" href="#tab">All Products</a></li>
-                            <li><a data-toggle="tab" href="#tab1">Laptops</a></li>
+                            <li><a data-toggle="tab" href="#tab0">All Products</a></li>
+                            <li class="active"><a data-toggle="tab" href="#tab1">Laptops</a></li>
                             <li><a data-toggle="tab" href="#tab2">Smartphones</a></li>
                             <li><a data-toggle="tab" href="#tab3">Cameras</a></li>
                             <li><a data-toggle="tab" href="#tab4">Accessories</a></li>
@@ -121,8 +121,8 @@
             <div class="col-md-12">
                 <div class="row">
                     <div class="products-tabs">
-                        <!-- tab laptops -->
-                        <div id="tab" class="tab-pane active">
+                        <!-- tab all -->
+                        <div id="tab0" class="tab-pane">
                             <div class="products-slick" data-nav="#slick-nav">
                                 <!-- product -->
                                 @foreach (var item in listNewProducts)
@@ -161,7 +161,7 @@
                             </div>
                             <div id="slick-nav" class="products-slick-nav"></div>
                         </div>
-                        <!-- /tab laptops-->
+                        <!-- /tab all-->
                         <!-- tab laptops -->
                         <div id="tab1" class="tab-pane active">
                             <div class="products-slick" data-nav="#slick-nav-1">
@@ -204,7 +204,7 @@
                         </div>
                         <!-- /tab laptops-->
                         <!-- tab smartphones -->
-                        <div id="tab2" class="tab-pane active">
+                        <div id="tab2" class="tab-pane">
                             <div class="products-slick" data-nav="#slick-nav-2">
                                 <!-- product -->
                                 @foreach (var item in listNewProducts.Where(x => x.ProductType == Project.Common.Enum.ProductType.Phone || x.ProductType == Project.Common.Enum.ProductType.Tablet))
@@ -245,7 +245,7 @@
                         </div>
                         <!-- /tab smartphones-->
                         <!-- tab cameras -->
-                        <div id="tab3" class="tab-pane active">
+                        <div id="tab3" class="tab-pane">
                             <div class="products-slick" data-nav="#slick-nav-3">
                                 <!-- product -->
                                 @foreach (var item in listNewProducts.Where(x => x.ProductType == Project.Common.Enum.ProductType.Camera))
@@ -286,7 +286,7 @@
                         </div>
                         <!-- /tab cameras-->
                         <!-- tab acessiories -->
-                        <div id="tab4" class="tab-pane active">
+                        <div id="tab4" class="tab-pane">
                             <div class="products-slick" data-nav="#slick-nav-4">
                                 <!-- product -->
                                 @foreach (var item in listNewProducts.Where(x => x.ProductType == Project.Common.Enum.ProductType.Accessory || x.ProductType == Project.Common.Enum.ProductType.Heaphone))
