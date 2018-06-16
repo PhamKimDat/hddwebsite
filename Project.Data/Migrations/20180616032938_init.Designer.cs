@@ -12,8 +12,8 @@ using System;
 namespace Project.MySQL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20180611043531_initschema")]
-    partial class initschema
+    [Migration("20180616032938_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -92,6 +92,8 @@ namespace Project.MySQL.Migrations
                     b.Property<double>("Price");
 
                     b.Property<int>("ProductType");
+
+                    b.Property<int>("Rating");
 
                     b.Property<int>("Trend");
 

@@ -16,9 +16,9 @@
                 <ul class="breadcrumb-tree">
                     <li><a href="@Url.Action("Index", "Home")">Home</a></li>
                     @*<li><a href="#">All Categories</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Headphones</a></li>
-                    <li class="active">Product name goes here</li>*@
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Headphones</a></li>
+                        <li class="active">Product name goes here</li>*@
                 </ul>
             </div>
         </div>
@@ -81,11 +81,14 @@
                     <h2 class="product-name">@Model.Name</h2>
                     <div>
                         <div class="product-rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
+                            @for (int i = 0; i < Model.Rating; i++)
+                            {
+                                <i class="fa fa-star"></i>
+                            }
+                            @for (int i = Model.Rating; i < 5; i++)
+                            {
+                                <i class="fa fa-star-o"></i>
+                            }
                         </div>
                         <a class="review-link" href="#">10 Review(s) | Add your review</a>
                     </div>
@@ -115,7 +118,7 @@
                             <p>
                                 AMOUNT  <label> @Model.Amount </label>
                             </p>
-                           
+
                         </div>
                     </div>
 
@@ -132,9 +135,9 @@
                     </div>
 
                     @*<ul class="product-btns">
-                        <li><a href="#"><i class="fa fa-heart-o"></i> add to wishlist</a></li>
-                        <li><a href="#"><i class="fa fa-exchange"></i> add to compare</a></li>
-                    </ul>*@
+                            <li><a href="#"><i class="fa fa-heart-o"></i> add to wishlist</a></li>
+                            <li><a href="#"><i class="fa fa-exchange"></i> add to compare</a></li>
+                        </ul>*@
 
                     <ul class="product-links">
                         <li>Category:</li>
@@ -368,5 +371,5 @@
 </div>
 <!-- /SECTION -->
 <div>
-    @await Component.InvokeAsync("RelaventList", new { p = Model})
+    @await Component.InvokeAsync("RelaventList", new { p = Model })
 </div>

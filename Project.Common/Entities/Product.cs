@@ -14,7 +14,7 @@ namespace Project.Common.Entities
 
         public string Description { get; set; }
 
-        public ProductType ProductType{ get; set; }
+        public ProductType ProductType { get; set; }
 
         public Trend Trend { get; set; }
 
@@ -24,7 +24,9 @@ namespace Project.Common.Entities
 
         public int Amount { get; set; }
 
-        public virtual List<BillDetail> BillDetails{ get; set; }
+        public int Rating { get; set; }
+
+        public virtual List<BillDetail> BillDetails { get; set; }
 
     }
 }

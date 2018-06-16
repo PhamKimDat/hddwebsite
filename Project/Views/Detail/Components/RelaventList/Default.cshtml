@@ -29,14 +29,45 @@
                         <div class="product-img">
                             <img src=@p.ImageUrl alt="">
                             <div class="product-label">
-                                <span class="sale">-@p.Discount%</span>
+                                @if (p.Discount != 0)
+                                {
+                                    <span class="sale">-@p.Discount%</span>
+                                }
                             </div>
                         </div>
                         <div class="product-body">
                             <p class="product-category">@p.ProductType</p>
-                            <h3 class="product-name"><a href="@Url.Action("Index", "Detail", new {ID = p.Id})">@p.Name</a></h3>
-                            <h4 class="product-price">@p.Price VND <del class="product-old-price">0 VND</del></h4>
+                            <h3 class="product-name"><a href="@Url.Action("Index", "Detail", new { ID = p.Id })">@p.Name</a></h3>
+                            @if (p.Discount != 0)
+                            {
+                                <h4 class="product-price">
+                                    @{
+                                        String oldMoney = String.Format("{0:0,00} VND", p.Price);
+                                        String newMoney = String.Format("{0:0,00} VND", p.Price - p.Price * p.Discount);
+                                    }
+                                    @newMoney
+                                    <del class="product-old-price">@oldMoney</del>
+                                </h4>
+                            }
+                            else
+                            {
+                                <h4 class="product-price">
+                                    @{
+                                        String money = String.Format("{0:0,00} VND", p.Price);
+                                    }
+                                    @money
+                                </h4>
+                            }
+
                             <div class="product-rating">
+                                @for (int i = 0; i < p.Rating; i++)
+                                {
+                                    <i class="fa fa-star"></i>
+                                }
+                                @for (int i = p.Rating; i < 5; i++)
+                                {
+                                    <i class="fa fa-star-o"></i>
+                                }
                             </div>
                             <div class="product-btns">
                                 <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
@@ -52,10 +83,10 @@
 
                 relaventDisplayNumber -= 1;
             }
-            <!-- /product -->
-        </div>
-        <!-- /row -->
-    </div>
-    <!-- /container -->
-</div>
-<!-- /Section -->
+                                <!-- /product -->
+                            </div>
+                            <!-- /row -->
+                        </div>
+                        <!-- /container -->
+                    </div>
+                    <!-- /Section -->
