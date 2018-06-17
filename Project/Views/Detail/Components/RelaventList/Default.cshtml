@@ -31,7 +31,8 @@
                             <div class="product-label">
                                 @if (p.Discount != 0)
                                 {
-                                    <span class="sale">-@p.Discount%</span>
+                                    var discountDisplay = p.Discount * 100;
+                                    <span class="sale">-@discountDisplay%</span>
                                 }
                             </div>
                         </div>
@@ -76,17 +77,17 @@
                             </div>
                         </div>
                         <div class="add-to-cart">
-                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                            <button id="@p.Id" class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
                         </div>
                     </div>
                 </div>
 
                 relaventDisplayNumber -= 1;
             }
-                                <!-- /product -->
-                            </div>
-                            <!-- /row -->
-                        </div>
-                        <!-- /container -->
-                    </div>
-                    <!-- /Section -->
+            <!-- /product -->
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</div>
+<!-- /Section -->

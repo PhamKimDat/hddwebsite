@@ -94,25 +94,25 @@
                     </div>
                     <div>
                         @if (Model.Discount != 0)
-                                            {
-                                                <h4 class="product-price">
-                                                    @{
-                                                        String oldMoney = String.Format("{0:0,00} VND", Model.Price);
-                                                        String newMoney = String.Format("{0:0,00} VND", Model.Price - Model.Price * Model.Discount);
-                                                    }
-                                                    @newMoney
-                                                    <del class="product-old-price">@oldMoney</del>
-                                                </h4>
-                                            }
-                                            else
-                                            {
-                                                <h4 class="product-price">
-                                                    @{
-                                                        String money = String.Format("{0:0,00} VND", Model.Price);
-                                                    }
-                                                    @money
-                                                </h4>
-                                            }
+                        {
+                            <h4 class="product-price">
+                                @{
+                                    String oldMoney = String.Format("{0:0,00} VND", Model.Price);
+                                    String newMoney = String.Format("{0:0,00} VND", Model.Price - Model.Price * Model.Discount);
+                                }
+                                @newMoney
+                                <del class="product-old-price">@oldMoney</del>
+                            </h4>
+                        }
+                        else
+                        {
+                            <h4 class="product-price">
+                                @{
+                                    String money = String.Format("{0:0,00} VND", Model.Price);
+                                }
+                                @money
+                            </h4>
+                        }
                         <span class="product-available">Trong kho</span>
                     </div>
                     <p>@Model.Description</p>
@@ -150,7 +150,7 @@
                                 <span class="qty-down">-</span>
                             </div>
                         </div>
-                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                        <button pg="detail" amount="@Model.Amount" id="@Model.Id" class="add-to-cart-btn btnDetail"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
                     </div>
 
                     @*<ul class="product-btns">
