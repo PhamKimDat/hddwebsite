@@ -31,7 +31,8 @@
                             <div class="product-label">
                                 @if (p.Discount != 0)
                                 {
-                                    <span class="sale">-@p.Discount%</span>
+                                    var discountDisplay = p.Discount * 100;
+                                    <span class="sale">-@discountDisplay%</span>
                                 }
                             </div>
                         </div>
