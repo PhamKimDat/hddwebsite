@@ -1,11 +1,7 @@
 ﻿<Properties StartupConfiguration="{34A6ED41-596C-4008-8A99-77265BBA3247}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Project/Views/Shared/_Layout.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Project/Views/Detail/Index.cshtml">
     <Files>
-      <File FileName="Project/Controllers/HomeController.cs" Line="69" Column="31" />
-      <File FileName="Project/Views/Checkout/Index.cshtml" Line="2" Column="36" />
-      <File FileName="Project/Views/Home/Index.cshtml" Line="2" Column="35" />
-      <File FileName="Project/Views/Detail/Index.cshtml" Line="2" Column="43" />
-      <File FileName="Project/Views/Shared/_Layout.cshtml" Line="8" Column="41" />
+      <File FileName="Project/Views/Detail/Index.cshtml" Line="151" Column="35" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

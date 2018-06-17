@@ -54,6 +54,16 @@ namespace Project.Controllers
         [HttpGet]
         public ActionResult AddCartItem(String Id, int qty = 1)
         {
+            var cart = HttpContext.Session.Get<ListCartItem>("cart");
+            foreach (var item in cart.Items)
+            {
+                if (item.Id == Id)
+                {
+                    item.Qty += qty;
+                    HttpContext.Session.Set<ListCartItem>("cart", cart);
+                    return Json(cart);
+                }
+            }
             var product = (Product)_context.Products.SingleOrDefault(x => x.Id == Id);
             var cartItem = new CartItem();
             cartItem.Id = product.Id;
@@ -62,7 +72,6 @@ namespace Project.Controllers
             cartItem.Price = product.Price;
             cartItem.Qty = qty;
 
-            var cart = HttpContext.Session.Get<ListCartItem>("cart");
             cart.Items.Add(cartItem);
             HttpContext.Session.Set<ListCartItem>("cart", cart);
 
