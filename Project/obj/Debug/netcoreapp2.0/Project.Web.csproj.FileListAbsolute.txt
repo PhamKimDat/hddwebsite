@@ -11,19 +11,6 @@ C:/DOAn/hddwebsite/Project/obj/Debug/netcoreapp2.0/Project.Web.dll
 C:/DOAn/hddwebsite/Project/obj/Debug/netcoreapp2.0/Project.Web.pdb
 C:/DOAn/hddwebsite/Project/bin/Debug/netcoreapp2.0/Project.Core.dll
 C:/DOAn/hddwebsite/Project/bin/Debug/netcoreapp2.0/Project.Core.pdb
-C:/HDDWebsite/hddwebsite/Project/obj/Debug/netcoreapp2.0/Project.Web.csprojResolveAssemblyReference.cache
-C:/HDDWebsite/hddwebsite/Project/obj/Debug/netcoreapp2.0/Project.Web.csproj.CoreCompileInputs.cache
-C:/HDDWebsite/hddwebsite/Project/obj/Debug/netcoreapp2.0/Project.Web.AssemblyInfoInputs.cache
-C:/HDDWebsite/hddwebsite/Project/obj/Debug/netcoreapp2.0/Project.Web.AssemblyInfo.cs
-C:/HDDWebsite/hddwebsite/Project/obj/Debug/netcoreapp2.0/Project.Web.dll
-C:/HDDWebsite/hddwebsite/Project/obj/Debug/netcoreapp2.0/Project.Web.pdb
-C:/HDDWebsite/hddwebsite/Project/bin/Debug/netcoreapp2.0/Project.Web.deps.json
-C:/HDDWebsite/hddwebsite/Project/bin/Debug/netcoreapp2.0/Project.Web.runtimeconfig.json
-C:/HDDWebsite/hddwebsite/Project/bin/Debug/netcoreapp2.0/Project.Web.runtimeconfig.dev.json
-C:/HDDWebsite/hddwebsite/Project/bin/Debug/netcoreapp2.0/Project.Web.dll
-C:/HDDWebsite/hddwebsite/Project/bin/Debug/netcoreapp2.0/Project.Web.pdb
-C:/HDDWebsite/hddwebsite/Project/bin/Debug/netcoreapp2.0/Project.Core.dll
-C:/HDDWebsite/hddwebsite/Project/bin/Debug/netcoreapp2.0/Project.Core.pdb
 C:/Proje/hddwebsite/Project/obj/Debug/netcoreapp2.0/Project.Web.csprojAssemblyReference.cache
 C:/Proje/hddwebsite/Project/obj/Debug/netcoreapp2.0/Project.Web.csproj.CoreCompileInputs.cache
 C:/Proje/hddwebsite/Project/obj/Debug/netcoreapp2.0/Project.Web.AssemblyInfoInputs.cache
@@ -46,3 +33,21 @@ C:/Proje/hddwebsite/Project/obj/Debug/netcoreapp2.0/Project.Web.pdb
 /Volumes/My Projects/Visual Studio Projects/hddwebsite/Project/obj/Debug/netcoreapp2.0/Project.Web.csproj.CopyComplete
 /Volumes/My Projects/Visual Studio Projects/hddwebsite/Project/obj/Debug/netcoreapp2.0/Project.Web.dll
 /Volumes/My Projects/Visual Studio Projects/hddwebsite/Project/obj/Debug/netcoreapp2.0/Project.Web.pdb
+C:\HDDWebsite\hddwebsite\Project\bin\Debug\netcoreapp2.0\Project.Web.deps.json
+C:\HDDWebsite\hddwebsite\Project\bin\Debug\netcoreapp2.0\Project.Web.runtimeconfig.json
+C:\HDDWebsite\hddwebsite\Project\bin\Debug\netcoreapp2.0\Project.Web.runtimeconfig.dev.json
+C:\HDDWebsite\hddwebsite\Project\bin\Debug\netcoreapp2.0\Project.Web.dll
+C:\HDDWebsite\hddwebsite\Project\bin\Debug\netcoreapp2.0\Project.Web.pdb
+C:\HDDWebsite\hddwebsite\Project\bin\Debug\netcoreapp2.0\Project.Common.dll
+C:\HDDWebsite\hddwebsite\Project\bin\Debug\netcoreapp2.0\Project.MySQL.dll
+C:\HDDWebsite\hddwebsite\Project\bin\Debug\netcoreapp2.0\Project.SQLServer.dll
+C:\HDDWebsite\hddwebsite\Project\bin\Debug\netcoreapp2.0\Project.Common.pdb
+C:\HDDWebsite\hddwebsite\Project\bin\Debug\netcoreapp2.0\Project.MySQL.pdb
+C:\HDDWebsite\hddwebsite\Project\bin\Debug\netcoreapp2.0\Project.SQLServer.pdb
+C:\HDDWebsite\hddwebsite\Project\obj\Debug\netcoreapp2.0\Project.Web.csprojAssemblyReference.cache
+C:\HDDWebsite\hddwebsite\Project\obj\Debug\netcoreapp2.0\Project.Web.csproj.CoreCompileInputs.cache
+C:\HDDWebsite\hddwebsite\Project\obj\Debug\netcoreapp2.0\Project.Web.AssemblyInfoInputs.cache
+C:\HDDWebsite\hddwebsite\Project\obj\Debug\netcoreapp2.0\Project.Web.AssemblyInfo.cs
+C:\HDDWebsite\hddwebsite\Project\obj\Debug\netcoreapp2.0\Project.Web.csproj.CopyComplete
+C:\HDDWebsite\hddwebsite\Project\obj\Debug\netcoreapp2.0\Project.Web.dll
+C:\HDDWebsite\hddwebsite\Project\obj\Debug\netcoreapp2.0\Project.Web.pdb

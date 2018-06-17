@@ -13201,11 +13201,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Proje\\hddwebsite\\Project.Core\\Project.SQLServer.csproj",
+      "projectUniqueName": "C:\\HDDWebsite\\hddwebsite\\Project.Core\\Project.SQLServer.csproj",
       "projectName": "Project.SQLServer",
-      "projectPath": "C:\\Proje\\hddwebsite\\Project.Core\\Project.SQLServer.csproj",
+      "projectPath": "C:\\HDDWebsite\\hddwebsite\\Project.Core\\Project.SQLServer.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Proje\\hddwebsite\\Project.Core\\obj\\",
+      "outputPath": "C:\\HDDWebsite\\hddwebsite\\Project.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13224,8 +13224,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Proje\\hddwebsite\\Project.Common\\Project.Common.csproj": {
-              "projectPath": "C:\\Proje\\hddwebsite\\Project.Common\\Project.Common.csproj"
+            "C:\\HDDWebsite\\hddwebsite\\Project.Common\\Project.Common.csproj": {
+              "projectPath": "C:\\HDDWebsite\\hddwebsite\\Project.Common\\Project.Common.csproj"
             }
           }
         }
