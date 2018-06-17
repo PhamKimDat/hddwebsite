@@ -92,6 +92,10 @@ namespace Project.MySQL.Migrations
 
                     b.Property<int>("ProductType");
 
+                    b.Property<int>("Rating");
+
+                    b.Property<int>("Trend");
+
                     b.Property<DateTimeOffset>("UpdatedAt");
 
                     b.HasKey("Id");

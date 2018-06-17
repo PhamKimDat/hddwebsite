@@ -28,5 +28,6 @@
       <Compile Remove="Migrations\20180521124105_init.cs" />
       <Compile Remove="Migrations\20180521124105_init.Designer.cs" />
       <Compile Remove="Migrations\ApplicationDbContextModelSnapshot.cs" />
+      <Compile Remove="Migrations\20180611043531_initschema.cs" />
     </ItemGroup>
 </Project>

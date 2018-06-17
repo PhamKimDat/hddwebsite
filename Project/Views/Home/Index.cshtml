@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Trang chủ";
 }
 @model List<Project.Common.Entities.Product>
 @*use Model not model in view*@
@@ -176,7 +176,7 @@
                                             </div>
                                         </div>
                                         <div class="add-to-cart">
-                                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                                            <button id="@item.Id" class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
                                         </div>
                                     </div>
                                 }

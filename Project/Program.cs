@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Project.MySQL.Data;
-using Project.SQLServer.Data;
+//using Project.SQLServer.Data;
 using Project.Web;
 
 namespace Project
@@ -25,10 +25,10 @@ namespace Project
                 var services = scope.ServiceProvider;
                 try
                 {
-                    var context = services.GetRequiredService<ApplicationDbContextSQL>();
-                    //var context = services.GetRequiredService<ApplicationDbContext>(); //MySQL
+                    //var context = services.GetRequiredService<ApplicationDbContextSQL>();
+                    var context = services.GetRequiredService<ApplicationDbContext>(); //MySQL
 
-                    DbInitializer.Initialize(context);
+                    //DbInitializer.Initialize(context);
                 }
                 catch (Exception ex)
                 {

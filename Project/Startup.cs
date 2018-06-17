@@ -32,6 +32,9 @@ namespace Project
             //MySQL
             services.AddDbContext<ApplicationDbContext>(options =>
                                                options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddDistributedMemoryCache();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,6 +49,8 @@ namespace Project
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
+            app.UseSession();
 
             app.UseStaticFiles();
 

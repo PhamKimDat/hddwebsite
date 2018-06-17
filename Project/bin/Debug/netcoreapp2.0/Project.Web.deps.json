@@ -25,11 +25,11 @@
         "dependencies": {
           "AutoFixture": "4.4.0",
           "Microsoft.AspNetCore.All": "2.0.0",
+          "Microsoft.AspNetCore.Session": "2.0.0",
           "Microsoft.EntityFrameworkCore": "2.0.0",
           "Microsoft.NETCore.App": "2.0.0",
           "Project.Common": "1.0.0",
-          "Project.MySQL": "1.0.0",
-          "Project.SQLServer": "1.0.0"
+          "Project.MySQL": "1.0.0"
         },
         "runtime": {
           "Project.Web.dll": {}
@@ -4151,21 +4151,6 @@
           "Project.MySQL.dll": {}
         }
       },
-      "Project.SQLServer/1.0.0": {
-        "dependencies": {
-          "AutoFixture": "4.4.0",
-          "Microsoft.AspNetCore.All": "2.0.0",
-          "Microsoft.EntityFrameworkCore": "2.0.0",
-          "Microsoft.EntityFrameworkCore.Relational": "2.0.0",
-          "Project.Common": "1.0.0"
-        },
-        "runtime": {
-          "Project.SQLServer.dll": {}
-        },
-        "compile": {
-          "Project.SQLServer.dll": {}
-        }
-      },
       "Microsoft.NETCore.App/2.0.0": {
         "dependencies": {
           "Microsoft.NETCore.DotNetHostPolicy": "2.0.0",
@@ -6470,11 +6455,6 @@
       "sha512": ""
     },
     "Project.MySQL/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Project.SQLServer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Detail Page";
+    ViewData["Title"] = "Chi tiết sản phẩm";
 }
 
 @model Project.Common.Entities.Product;
@@ -93,7 +93,26 @@
                         <a class="review-link" href="#">10 Bình luận | Thêm bình luận của bạn</a>
                     </div>
                     <div>
-                        <h3 class="product-price">@Model.Price<del class="product-old-price"> 4000 VND</del></h3>
+                        @if (Model.Discount != 0)
+                                            {
+                                                <h4 class="product-price">
+                                                    @{
+                                                        String oldMoney = String.Format("{0:0,00} VND", Model.Price);
+                                                        String newMoney = String.Format("{0:0,00} VND", Model.Price - Model.Price * Model.Discount);
+                                                    }
+                                                    @newMoney
+                                                    <del class="product-old-price">@oldMoney</del>
+                                                </h4>
+                                            }
+                                            else
+                                            {
+                                                <h4 class="product-price">
+                                                    @{
+                                                        String money = String.Format("{0:0,00} VND", Model.Price);
+                                                    }
+                                                    @money
+                                                </h4>
+                                            }
                         <span class="product-available">Trong kho</span>
                     </div>
                     <p>@Model.Description</p>

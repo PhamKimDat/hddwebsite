@@ -5131,8 +5131,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
-          "Microsoft.AspNetCore.All": "2.0.0",
-          "Microsoft.NETCore.App": "2.0.0"
+          "Microsoft.AspNetCore.All": "2.0.0"
         },
         "compile": {
           "bin/placeholder/Project.Common.dll": {}
@@ -5146,7 +5145,6 @@
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.0",
-          "Microsoft.NETCore.App": "2.0.0",
           "MySql.Data.EntityFrameworkCore": "8.0.8-dmr",
           "Pomelo.EntityFrameworkCore.MySql": "2.0.0-rtm-10062",
           "Project.Common": "1.0.0"
@@ -5156,23 +5154,6 @@
         },
         "runtime": {
           "bin/placeholder/Project.MySQL.dll": {}
-        }
-      },
-      "Project.SQLServer/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
-        "dependencies": {
-          "AutoFixture": "4.4.0",
-          "Microsoft.AspNetCore.All": "2.0.0",
-          "Microsoft.EntityFrameworkCore": "2.0.0",
-          "Microsoft.EntityFrameworkCore.Relational": "2.0.0",
-          "Project.Common": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Project.SQLServer.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Project.SQLServer.dll": {}
         }
       }
     }
@@ -13418,62 +13399,52 @@
       "type": "project",
       "path": "../Project.Data/Project.MySQL.csproj",
       "msbuildProject": "../Project.Data/Project.MySQL.csproj"
-    },
-    "Project.SQLServer/1.0.0": {
-      "type": "project",
-      "path": "../Project.Core/Project.SQLServer.csproj",
-      "msbuildProject": "../Project.Core/Project.SQLServer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "AutoFixture >= 4.4.0",
       "Microsoft.AspNetCore.All >= 2.0.0",
+      "Microsoft.AspNetCore.Session >= 2.0.0",
       "Microsoft.EntityFrameworkCore >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
       "Project.Common >= 1.0.0",
-      "Project.MySQL >= 1.0.0",
-      "Project.SQLServer >= 1.0.0"
+      "Project.MySQL >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/hoangduy/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Proje\\hddwebsite\\Project\\Project.Web.csproj",
+      "projectUniqueName": "/Volumes/My Projects/Visual Studio Projects/hddwebsite/Project/Project.Web.csproj",
       "projectName": "Project.Web",
-      "projectPath": "C:\\Proje\\hddwebsite\\Project\\Project.Web.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Proje\\hddwebsite\\Project\\obj\\",
+      "projectPath": "/Volumes/My Projects/Visual Studio Projects/hddwebsite/Project/Project.Web.csproj",
+      "packagesPath": "/Users/hoangduy/.nuget/packages/",
+      "outputPath": "/Volumes/My Projects/Visual Studio Projects/hddwebsite/Project/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/hoangduy/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Proje\\hddwebsite\\Project.Common\\Project.Common.csproj": {
-              "projectPath": "C:\\Proje\\hddwebsite\\Project.Common\\Project.Common.csproj"
+            "/Volumes/My Projects/Visual Studio Projects/hddwebsite/Project.Common/Project.Common.csproj": {
+              "projectPath": "/Volumes/My Projects/Visual Studio Projects/hddwebsite/Project.Common/Project.Common.csproj"
             },
-            "C:\\Proje\\hddwebsite\\Project.Core\\Project.SQLServer.csproj": {
-              "projectPath": "C:\\Proje\\hddwebsite\\Project.Core\\Project.SQLServer.csproj"
-            },
-            "C:\\Proje\\hddwebsite\\Project.Data\\Project.MySQL.csproj": {
-              "projectPath": "C:\\Proje\\hddwebsite\\Project.Data\\Project.MySQL.csproj"
+            "/Volumes/My Projects/Visual Studio Projects/hddwebsite/Project.Data/Project.MySQL.csproj": {
+              "projectPath": "/Volumes/My Projects/Visual Studio Projects/hddwebsite/Project.Data/Project.MySQL.csproj"
             }
           }
         }
@@ -13487,22 +13458,27 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Microsoft.NETCore.App": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "2.0",
+            "autoReferenced": true
+          },
           "AutoFixture": {
             "target": "Package",
-            "version": "[4.4.0, )"
+            "version": "4.4.0"
           },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "[2.0.0, )"
+            "version": "2.0.0"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
-            "version": "[2.0.0, )"
+            "version": "2.0.0"
           },
-          "Microsoft.NETCore.App": {
+          "Microsoft.AspNetCore.Session": {
             "target": "Package",
-            "version": "[2.0.0, )",
-            "autoReferenced": true
+            "version": "2.0.0"
           }
         },
         "imports": [

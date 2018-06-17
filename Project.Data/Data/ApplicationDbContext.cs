@@ -22,14 +22,14 @@ namespace Project.MySQL.Data
 
             // Change ApplicationUser to Users table
             builder.Entity<Product>().ToTable("Products");
-            builder.Entity<Bill>().ToTable("Bills");
-            builder.Entity<User>().ToTable("Users");
-            builder.Entity<BillDetail>().ToTable("BillDetails");
+            //builder.Entity<Bill>().ToTable("Bills");
+            //builder.Entity<User>().ToTable("Users");
+            //builder.Entity<BillDetail>().ToTable("BillDetails");
 
             //add relationship
-            builder.Entity<Product>().HasMany(b => b.BillDetails).WithOne(p => p.Product).HasForeignKey(b => b.ProductId);  //relation ship with billdetail and product
-            builder.Entity<BillDetail>().HasOne(b => b.Bill).WithMany(p => p.BillDetails).HasForeignKey(b => b.BillId);  //relation ship with billdetail and product
-            builder.Entity<User>().HasMany(u => u.Bills).WithOne(b => b.User).HasForeignKey(u => u.UserId);
+            //builder.Entity<Product>().HasMany(b => b.BillDetails).WithOne(p => p.Product).HasForeignKey(b => b.ProductId);  //relation ship with billdetail and product
+            //builder.Entity<BillDetail>().HasOne(b => b.Bill).WithMany(p => p.BillDetails).HasForeignKey(b => b.BillId);  //relation ship with billdetail and product
+            //builder.Entity<User>().HasMany(u => u.Bills).WithOne(b => b.User).HasForeignKey(u => u.UserId);
         }
 
         #region DbSet
