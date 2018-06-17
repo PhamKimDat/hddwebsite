@@ -12,9 +12,10 @@ using System;
 namespace Project.SQLServer.Migrations
 {
     [DbContext(typeof(ApplicationDbContextSQL))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180617134145_addRatingColumn")]
+    partial class addRatingColumn
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -54,11 +55,11 @@ namespace Project.SQLServer.Migrations
 
                     b.Property<string>("Description");
 
-                    b.Property<double>("Price");
-
                     b.Property<string>("ProductId");
 
                     b.Property<double>("Total");
+
+                    b.Property<double>("TotalMoney");
 
                     b.Property<DateTimeOffset>("UpdatedAt");
 

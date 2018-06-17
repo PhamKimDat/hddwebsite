@@ -9,10 +9,6 @@ namespace Project.Web.Items
         {
             this.Items = new List<CartItem>();
         }
-        public List<CartItem> Items
-        {
-            get;
-            set;
-        }
+        public List<CartItem> Items { get; set; }
     }
 }

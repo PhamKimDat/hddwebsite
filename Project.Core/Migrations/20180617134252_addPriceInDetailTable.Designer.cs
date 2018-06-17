@@ -12,9 +12,10 @@ using System;
 namespace Project.SQLServer.Migrations
 {
     [DbContext(typeof(ApplicationDbContextSQL))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180617134252_addPriceInDetailTable")]
+    partial class addPriceInDetailTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

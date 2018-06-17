@@ -6,15 +6,16 @@ using Project.Common.Entities;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using Project.SQLServer.Data;
 
 namespace Project.Web.Controllers
 {
     public class RelaventListViewComponent : ViewComponent
     {
         //MySQL
-        private readonly ApplicationDbContext db;
+        private readonly ApplicationDbContextSQL db;
 
-        public RelaventListViewComponent(ApplicationDbContext context)
+        public RelaventListViewComponent(ApplicationDbContextSQL context)
         {
             this.db = context;
         }

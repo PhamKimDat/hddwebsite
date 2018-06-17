@@ -9,6 +9,7 @@ using Newtonsoft.Json;
 using Project.Common.Entities;
 //using Project.SQLServer.Data;
 using Project.MySQL.Data;
+using Project.SQLServer.Data;
 using Project.Web.Items;
 
 namespace Project.Controllers
@@ -16,16 +17,16 @@ namespace Project.Controllers
     public class HomeController : Controller
     {
         #region fields
-        //private readonly ApplicationDbContextSQL _context;
+        private readonly ApplicationDbContextSQL _context;
         //MySQL
-        private readonly ApplicationDbContext _context;
+        //private readonly ApplicationDbContext _context;
 
         #endregion
 
         #region Constructor
         public HomeController(
-             //ApplicationDbContextSQL context
-             ApplicationDbContext context //(MySQL)
+             ApplicationDbContextSQL context
+             //ApplicationDbContext context //(MySQL)
             )
         {
             _context = context;
@@ -83,6 +84,13 @@ namespace Project.Controllers
             HttpContext.Session.Set<ListCartItem>("cart", cart);
 
             return Json(cart);
+        }
+
+        public ActionResult ClearCart()
+        {
+            var cart = HttpContext.Session.Get<ListCartItem>("cart");
+            cart = null;
+            return Ok("Cleared Success");
         }
     }
 

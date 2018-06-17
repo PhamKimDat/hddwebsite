@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Project.Common.Entities;
 //using Project.SQLServer.Data;
 using Project.MySQL.Data;
+using Project.SQLServer.Data;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -14,16 +15,16 @@ namespace Project.Web.Controllers
     public class DetailController : Controller
     {
         #region fields
-        //private readonly ApplicationDbContextSQL _context;
-        //MySQL
-        private readonly ApplicationDbContext _context;
+        private readonly ApplicationDbContextSQL _context;
+        ////MySQL
+        //private readonly ApplicationDbContext _context;
 
         #endregion
 
         #region Constructor
         public DetailController(
-            //ApplicationDbContextSQL context
-            ApplicationDbContext context //(MySQL)
+            ApplicationDbContextSQL context
+            //ApplicationDbContext context //(MySQL)
             )
         {
             _context = context;

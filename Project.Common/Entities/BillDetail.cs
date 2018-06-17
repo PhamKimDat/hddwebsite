@@ -14,7 +14,7 @@ namespace Project.Common.Entities
 
         public int Amount { get; set; }
         public double Total { get; set; }
-        public double TotalMoney { get; set; }
+        public double Price { get; set; }
         public string Description { get; set; }
 
         public string ProductId { get; set; }

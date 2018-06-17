@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Project.Common.Entities;
 using Project.MySQL.Data;
+using Project.SQLServer.Data;
 //using Project.SQLServer.Data;
 
 namespace Project.Web
@@ -11,7 +12,7 @@ namespace Project.Web
     //class init data
     public static class DbInitializer
     {
-        internal static void Initialize(ApplicationDbContext context) //(rename ApplicationDbContext for MySQL)
+        internal static void Initialize(ApplicationDbContextSQL context) //(rename ApplicationDbContext for MySQL)
         {
             //context.Database.EnsureCreated();
 
